@@ -1,0 +1,19 @@
+{
+  "name": "zenit-landing",
+  "authors": [
+    "Roman Skobtsov"
+  ],
+  "description": "zenit-landing",
+  "main": "",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "v4.0.0-beta"
+  }
+}
