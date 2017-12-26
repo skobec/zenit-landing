@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
 
+
+@font-face {
+  font-family: 'NEXTART-Thin';
+  src: url('../fonts/NEXTART-Thin.eot');
+  src: url('../fonts/NEXTART-Thin.woff2') format('woff2'),
+       url('../fonts/NEXTART-Thin.woff') format('woff'),
+       url('../fonts/NEXTART-Thin.ttf') format('truetype'),
+       url('../fonts/NEXTART-Thin.svg#NEXTART-Thin') format('svg'),
+       url('../fonts/NEXTART-Thin.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXTART-Bold';
+  src: url('../fonts/NEXTART-Bold.eot');
+  src: url('../fonts/NEXTART-Bold.woff2') format('woff2'),
+       url('../fonts/NEXTART-Bold.woff') format('woff'),
+       url('../fonts/NEXTART-Bold.ttf') format('truetype'),
+       url('../fonts/NEXTART-Bold.svg#NEXTART-Bold') format('svg'),
+       url('../fonts/NEXTART-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'DINPro-Medium';
   src: url('../fonts/DINPro-Medium.eot');
@@ -104,7 +129,7 @@ h1, h2, h3, h4 {
       color: #ffffff;
       border-bottom: 4px solid;
       text-transform: uppercase;
-      font-family: "DINPro-Bold", sans-serif;
+      font-family: "NEXTART-Bold", sans-serif;
       letter-spacing: 20px;
       display: inline-block;
       padding-bottom: 5px;
@@ -114,7 +139,7 @@ h1, h2, h3, h4 {
       color: #ffffff;
       font-size: 44px;
       text-transform: uppercase;
-      font-family: DINPro-Light,sans-serif;
+      font-family: NEXTART-Thin,sans-serif;
       padding-top: 5px;
       display: inline-block;
     }
@@ -139,7 +164,7 @@ h1, h2, h3, h4 {
       margin-right: 0;
     }
     a {
-      font-family: "DINPro-Bold", sans-serif;
+      font-family: "NEXTART-Bold", sans-serif;
       text-transform: uppercase;
       font-size: 24px;
       color: #ffffff;
@@ -174,7 +199,7 @@ h1, h2, h3, h4 {
   color: #00ade5;
   text-transform: uppercase;
   font-size: 74px;
-  font-family: "DINPro-Bold", sans-serif;
+  font-family: "NEXTART-Bold", sans-serif;
   letter-spacing: 20px;
 }
 .row-titul-list {
@@ -183,18 +208,22 @@ h1, h2, h3, h4 {
   .col-titul {
     border-right: 2px solid #0b177e;
     text-align: center;
-    padding: 0 50px;
+    width: 20%;
+    &:last-child {
+      border-right: 0;
+    }
   }
   .number-image {
     height: 260px;
     position: relative;
+    margin-top: -22px;
     .number {
-      font-size: 364px;
+      font-size: 337px;
       color: #9ce4fb;
       line-height: 0;
-      margin-top: 106px;
+      margin-top: 151px;
       display: inline-block;
-      font-family: "DINPro-Bold", sans-serif;
+      font-family: "NEXTART-Bold", sans-serif;
     }
     .image {
       position: absolute;
@@ -207,17 +236,17 @@ h1, h2, h3, h4 {
   .bl-title {
     margin-top: 60px;
     .title {
-      font-size: 34px;
+      font-size: 32px;
       color: #00ade5;
       text-transform: uppercase;
-      font-family: "DINPro-Bold", sans-serif;
+      font-family: "NEXTART-Bold", sans-serif;
       display: block;
     }
     .years-titul {
       display: block;
       font-size: 18px;
       color: #00ade5;
-      font-family: DINPro-Light,sans-serif;
+      font-family: NEXTART-Thin,sans-serif;
     }
   }
 }
@@ -236,7 +265,7 @@ h1, h2, h3, h4 {
   color: #ffffff;
   border-bottom: 4px solid;
   text-transform: uppercase;
-  font-family: "DINPro-Bold", sans-serif;
+  font-family: "NEXTART-Bold", sans-serif;
   letter-spacing: 20px;
   display: inline-block;
   padding-bottom: 5px;
@@ -324,7 +353,7 @@ h1, h2, h3, h4 {
   font-size: 38px;
   text-transform: uppercase;
   color: #fff;
-  font-family: "DINPro-Bold",sans-serif;
+  font-family: "NEXTART-Bold",sans-serif;
   letter-spacing: 7px;
   margin: auto;
   right: 0;
@@ -361,7 +390,7 @@ h1, h2, h3, h4 {
   color: #000000;
   border-bottom: 4px dotted;
   text-transform: uppercase;
-  font-family: "DINPro-Bold", sans-serif;
+  font-family: "NEXTART-Bold", sans-serif;
   letter-spacing: 20px;
   display: inline-block;
   padding-bottom: 25px;
@@ -383,7 +412,7 @@ h1, h2, h3, h4 {
   padding: 65px 34px;
   display: inline-block;
   text-transform: uppercase;
-  font-family: "DINPro-Bold",sans-serif;
+  font-family: "NEXTART-Bold",sans-serif;
   letter-spacing: 7px;
   margin: auto;
   right: 0;
@@ -407,7 +436,7 @@ h1, h2, h3, h4 {
   }
 }
 .mail-nik {
-  font-family: 'DINPro-Light',sans-serif;
+  font-family: 'NEXTART-Thin',sans-serif;
   font-size: 36px;
   color: #ffffff;
 }
