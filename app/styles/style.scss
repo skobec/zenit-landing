@@ -380,10 +380,67 @@ h1, h2, h3, h4 {
   }
 }
 .street-bl {
-  background: #d1e3f2 url(../img/steet-bl.jpg)no-repeat;
   min-height: 1207px;
   padding-top: 52px;
-  background-position: center;
+  background-position: center!important;
+  position: relative;
+  overflow: hidden;
+  .container-tab {
+    z-index: 2;
+    position: relative;
+  }
+  .content-adres {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .adres-bl {
+      min-height: 1207px;
+      padding-top: 52px;
+      background-position: center!important;
+  }
+  .list-ico {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    li {
+      width: 25%;
+      display: inline-block;
+      position: relative;
+      &:after {
+        content: "";
+        height: 54px;
+        width: 120px;
+        box-shadow: 0px 0px 20px 20px #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -45px;
+        background-color: #ffffff;
+        bottom: 0;
+        margin: auto;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        z-index: 0;
+        opacity: 0;
+        -webkit-transition: 0.3s all;
+        -moz-transition: 0.3s all;
+        -ms-transition: 0.3s all;
+        -o-transition: 0.3s all;
+        transition: 0.3s all;
+      }
+      a {
+        position: relative;
+        z-index: 2;
+      }
+      &:hover,&.active {
+        &:after {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
 }
 .title-adres {
   font-size: 78px;
