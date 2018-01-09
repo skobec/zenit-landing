@@ -111,11 +111,17 @@ h1, h2, h3, h4 {
   font-weight: 300;
   font-size: 3em;
 }
+.fix-menu {
+  position: fixed;
+  background: linear-gradient(to bottom,rgb(0, 0, 0) 0%,rgb(0, 0, 0) 17%,rgba(0, 0, 0, 0.8) 59%,transparent 100%);
+  width: 100%;
+  padding-top: 45px;
+  z-index: 10;
+}
 .header {
   background: url("../img/header-background.jpg")no-repeat center;
   background-size: cover;
   min-height: 1010px;
-  padding-top: 45px;
   position: relative;
   .title-header {
     position: absolute;
