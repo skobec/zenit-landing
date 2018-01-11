@@ -113,7 +113,7 @@ h1, h2, h3, h4 {
 }
 .fix-menu {
   position: fixed;
-  background: linear-gradient(to bottom,rgb(0, 0, 0) 0%,rgb(0, 0, 0) 17%,rgba(0, 0, 0, 0.8) 59%,transparent 100%);
+  background: linear-gradient(to bottom,#000 0%,#000 17%,rgba(0, 0, 0, 0.97) 59%,transparent 100%);
   width: 100%;
   padding-top: 45px;
   z-index: 10;
@@ -198,7 +198,7 @@ h1, h2, h3, h4 {
   }
 }
 .titul-bl {
-  padding-top: 50px;
+  padding-top: 130px;
 
 }
 .title-titul {
@@ -385,6 +385,39 @@ h1, h2, h3, h4 {
 
   }
 }
+.play-video {
+  background-color: #00c7df;
+  padding: 18px 7px;
+  display: inline-block;
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "NEXTART-Bold",sans-serif;
+  letter-spacing: 7px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  bottom: -44px;
+  max-width: 520px;
+  text-align: center;
+  text-decoration: none!important;
+  cursor: pointer;
+  &:after {
+    content: "";
+    position: absolute;
+    //width: 95%;
+    //height: 95%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px dotted #ffffff;
+    margin: 7px;
+
+  }
+}
 .street-bl {
   min-height: 1207px;
   padding-top: 52px;
@@ -517,4 +550,29 @@ h1, h2, h3, h4 {
   height: 180px;
   background-color: #000000;
   padding-top: 50px;
+}
+
+.modal-body {
+  display: inherit;
+}
+.modal-dialog {
+      max-width: 615px;
+      margin: 130px auto 0;
+  }
+
+
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
 }
